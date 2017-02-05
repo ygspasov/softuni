@@ -24,30 +24,38 @@
 
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
+<nav class="navbar navbar-default navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">SoftUni</a>
+            <a class="navbar-brand" href="#">Brand</a>
         </div>
 
-        <form class="navbar-form navbar-right" role="search">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="SoftUni Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-    </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
 </nav>
 
 <div class="jumbotron">
     <div class="container">
-        <h1>Стани богат със Софтуни!</h1>
+        <img id="logo" src="resources/logo.bmp"/><h1>Стани богат със Софтуни!</h1>
         <p>Искате да станете богат програмист? Участвайте редовно в живото предаване "СофтУни"!</p>
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
     </div>
@@ -62,7 +70,6 @@
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                 </ol>
 
                 <!-- Wrapper for slides -->
@@ -70,13 +77,15 @@
                     <div class="item active">
                         <img src="resources/img/intro.jpg" alt="...">
                         <div class="carousel-caption">
-                            ...
+                            <h3>Искаш да станеш много богат?</h3>
+                            <p>Това е твоят шанс!</p>
                         </div>
                     </div>
                     <div class="item">
                         <img src="resources/img/Punchev2.jpg" alt="...">
                         <div class="carousel-caption">
-                            ...
+                            <h3>Искаш да станеш много богат?</h3>
+                            <p>Това е твоят шанс!</p>
                         </div>
                     </div>
                     ...
@@ -106,9 +115,14 @@
             </div>
         </div>
         <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt itaque maxime, minima officia quas
-                suscipit! Atque beatae debitis enim eum eveniet explicabo fugiat impedit, magnam mollitia porro quasi
-                ratione soluta.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias amet animi assumenda at aut dicta
+                ducimus, explicabo fugit inventore itaque laboriosam laborum minus nesciunt odit optio pariatur porro
+                quaerat quam quia quos rem sapiente, sed tenetur ut. Ab accusamus animi beatae cumque ea, error ipsa
+                laborum minima molestiae optio tenetur unde, ut veniam! Architecto blanditiis facilis, id labore
+                laudantium magnam maiores maxime necessitatibus nemo quam quidem rem tempora, ullam vero voluptatum?
+                Aliquam aspernatur, consectetur, corporis cum delectus dicta doloribus exercitationem fugiat itaque
+                nesciunt nostrum reprehenderit tempore temporibus ut, veritatis. Accusamus aperiam consequatur, culpa
+                exercitationem id laborum natus pariatur quam.</p>
         </div>
     </div>
     <hr>

@@ -1,12 +1,40 @@
-/* Move down content because we have a fixed navbar that is 50px tall */
-body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik');
+
+/*navbar*/
+
+.navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+    background: #162B40;
 }
 
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+/*jumbotron*/
 .jumbotron {
     margin-bottom: 0;
+    background: #234465;
 }
-.jumbotron p{
+
+.jumbotron h1{
+    color: #F79C04;
+    font-family: "Roboto",sans-serif;
+    font-size: 50px;
+}
+
+.jumbotron p {
     font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
+/*logo*/
+img#logo {
+    float: left;
+    margin-right: 20px;
+    height: 100px;
+    width: 100px;
 }
