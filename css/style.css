@@ -3,10 +3,22 @@
 
 /*navbar*/
 
-.navbar{
+.navbar {
     margin-bottom: 0;
     border-radius: 0;
     background: #162B40;
+}
+
+/*font-awesome icons*/
+
+ul.font-awesome {
+    margin-right: 50px;
+}
+
+ul.font-awesome a.fa{
+    font-size: 30px;
+    padding: 10px 5px;
+    color: white;
 }
 
 body {
@@ -14,14 +26,15 @@ body {
 }
 
 /*jumbotron*/
+
 .jumbotron {
     margin-bottom: 0;
     background: #234465;
 }
 
-.jumbotron h1{
+.jumbotron h1 {
     color: #F79C04;
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 50px;
 }
 
@@ -47,7 +60,7 @@ img#logo {
     margin: 0 auto;
 }
 
-section .title-container{
+section .title-container {
     border: 1px solid #ddd;
     margin: 20px 0;
 }
@@ -57,8 +70,8 @@ section .title-container h2 {
     padding: 10px 0;
 }
 
-h2.section-title{
-    font-family: "Roboto",sans-serif;
+h2.section-title {
+    font-family: "Roboto", sans-serif;
     text-align: center;
     color: #234465;
     background-color: #f5f5f5;
@@ -67,7 +80,7 @@ h2.section-title{
     font-weight: bold;
 }
 
-.panel-heading,.panel-footer {
+.panel-heading, .panel-footer {
     font-size: 17px;
     color: #234465;
 }
