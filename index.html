@@ -128,6 +128,46 @@
                     mollis euismod. Donec sed odio dui. </p>
                 <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
             </div>
+            <div class="col-md-12">
+                <!--Collapsible list group, plus modal-->
+                <div class="panel-heading" role="tab" id="collapseListGroupHeading1"><h4 class="panel-title"><a
+                        href="#collapseListGroup1" class="" role="button" data-toggle="collapse" aria-expanded="false"
+                        aria-controls="collapseListGroup1"> Който учи, ще стане богат! (Прочети договора тук!)</a></h4></div>
+                <div class="panel-collapse collapse" role="tabpanel" id="collapseListGroup1"
+                     aria-labelledby="collapseListGroupHeading1" aria-expanded="false" style="">
+                    <ul class="list-group">
+                        <li class="list-group-item">1. Под "Учи" се има предвид, че се учи 24 часа в денонощието, иначе договора се счита за невалиден!</li>
+                        <li class="list-group-item">2. Под "Ще Стане" се има предвид, че има вероятност. Вероятността е около 10% до 15%.</li>
+                        <li class="list-group-item">3. Под "Богат" се има предвид в сравнение със средният доход за България към 12/ 2015</li>
+                    </ul>
+                    <div class="panel-footer">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                            ИСКАМ ДА СТАНА БОГАТ ВЪПРЕКИ ВСИЧКО!
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Поздравления!</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        ТИ ВЕЧЕ СИ В ИГРАТА!
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Страхотно!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   <!--end of Collapsible list group, plus modal-->
+            </div>
+
+
+
         </main>
         <aside class="col-md-4">
             <section>
@@ -179,7 +219,5 @@
 <footer>
     <p>&copy; 2017 Sycamore, Inc.</p>
 </footer>
-
-
 </body>
 </html>

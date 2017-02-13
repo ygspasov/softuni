@@ -84,3 +84,36 @@ h2.section-title {
     font-size: 17px;
     color: #234465;
 }
+
+/*Collapsible list group*/
+
+.panel-title {
+    font-size: 30px;
+}
+
+.list-group li {
+    font-size: 20px;
+}
+
+.panel-footer button{
+    display: block;
+    margin: 0 auto;
+
+}
+
+/*modal*/
+
+.modal-content {
+    background: #286090;
+    color: white;
+}
+
+/*footer*/
+
+footer {
+    height: 60px;
+    background: #234465;
+    text-align: center;
+    color: white;
+    padding: 22px;
+}
