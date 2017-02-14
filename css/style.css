@@ -33,9 +33,8 @@ ul.font-awesome {
     margin-right: 50px;
 }
 
-ul.font-awesome a.fa {
-    font-size: 30px;
-    padding: 10px 5px;
+ul.font-awesome li {
+    font-size: 25px;
     color: white;
 }
 
