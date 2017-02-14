@@ -133,6 +133,10 @@ aside .panel-default:hover, .panel-body:hover{
     transition: background-color 1000ms linear;
 }
 
+#team main{
+    margin-top: 20px;
+}
+
 .list-group li {
     font-size: 20px;
 }
