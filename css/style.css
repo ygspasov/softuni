@@ -16,7 +16,7 @@ p {
     font-size: 18px;
 }
 
-.row{
+.row {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -25,6 +25,16 @@ p {
     margin-bottom: 0;
     border-radius: 0;
     background: #162B40;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #d7d5d5;
+}
+
+@media (max-width: 991px) {
+    .navbar form {
+        float: left !important;
+    }
 }
 
 /*font-awesome icons*/
@@ -48,15 +58,53 @@ ul.font-awesome li {
 .jumbotron h1 {
     color: #F79C04;
     font-size: 50px;
+    text-shadow: 2px 2px 5px #63651F;
 }
+
+@media (max-width: 767px){
+    .jumbotron h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 575px) {
+    .jumbotron h1 {
+        font-size: 28px;
+    }
+
+    #index .jumbotron p {
+        font-size: 17px !important;
+    }
+}
+
+
 
 .jumbotron p {
     font-weight: bold;
     color: white;
     font-size: 20px;
+    clear: left;
+    margin-top: 30px;
 }
 
-/*logo*/
+.jumbotron .container {
+    padding: 0 30px;
+}
+
+.jumbotron .btn-lg {
+    background: #162B40;
+    color: white;
+    border: none;
+}
+
+.jumbotron .btn-lg:hover{
+    background: white;
+    color: #234465;
+    font-weight: bold;
+}
+
+
+    /*logo*/
 img#logo {
     float: left;
     margin-right: 20px;
@@ -95,6 +143,10 @@ h2.section-title {
     color: #234465;
 }
 
+.container aside{
+    padding: 0;
+}
+
 aside .panel, aside .title-container {
     display: block;
     margin: 20px auto;
@@ -102,7 +154,7 @@ aside .panel, aside .title-container {
     max-width: 360px;
 }
 
-#winners aside .title-container:first-of-type{
+#winners aside .title-container:first-of-type {
     margin-top: 0;
 }
 
@@ -110,7 +162,7 @@ aside .panel, aside .title-container {
     font-size: 18px;
 }
 
-.panel-body img{
+.panel-body img {
     max-width: 350px;
     margin-bottom: 20px;
 }
@@ -127,12 +179,12 @@ aside .panel, aside .title-container {
     padding: 10px 0;
 }
 
-aside .panel-default:hover, .panel-body:hover{
+aside .panel-default:hover, .panel-body:hover {
     background: #ddd;
     transition: background-color 1000ms linear;
 }
 
-#team main{
+#team main {
     margin-top: 20px;
 }
 
@@ -156,15 +208,29 @@ aside .panel-default:hover, .panel-body:hover{
 /*footer*/
 
 footer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
     height: 60px;
     background: #234465;
-    text-align: center;
     color: white;
-    padding: 22px;
 }
 
+
 footer p {
-    margin:0;
+    margin: 0 20px;
+}
+
+@media (max-width:575px){
+    footer{
+        min-height: 60px;
+        flex-wrap:wrap;
+        justify-content: flex-start;
+    }
+    footer p{
+        font-size: 13px;
+    }
+
 }
 
 .back-to-top {
@@ -185,7 +251,7 @@ footer p {
     background: #F79C04;
 }
 
-.back-to-top:hover{
+.back-to-top:hover {
     color: white;
     text-decoration: none;
     background: #F77C04;

@@ -1,10 +1,10 @@
 /**
-* Created by Yavor on 31/01/2017.
-*/
+ * Created by Yavor on 31/01/2017.
+ */
 
 //Active button for the menu
 
-jQuery(function() {
+jQuery(function () {
     //highlight the current nav
     $("#index a:contains('Вкъщи')").parent().addClass('active');
     $("#winners a:contains('Победители')").parent().addClass('active');
@@ -14,13 +14,13 @@ jQuery(function() {
 
 // The back to top button
 
-jQuery(document).ready(function() {
+jQuery(document).ready(function () {
 
-    var offset = 250;
+    var offset = 300;
 
     var duration = 600;
 
-    jQuery(window).scroll(function() {
+    jQuery(window).scroll(function () {
 
         if (jQuery(this).scrollTop() > offset) {
 
@@ -35,8 +35,7 @@ jQuery(document).ready(function() {
     });
 
 
-
-    jQuery('.back-to-top').click(function(event) {
+    jQuery('.back-to-top').click(function (event) {
 
         event.preventDefault();
 
