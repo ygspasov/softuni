@@ -7,6 +7,12 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
+@media (max-width: 575px){
+    body{
+        text-align: center;
+    }
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Rubik', sans-serif;
 }
@@ -52,7 +58,10 @@ ul.font-awesome li {
 
 .jumbotron {
     margin-bottom: 0;
-    background: #234465;
+    background: -webkit-linear-gradient(rgba(35,68,101,0.5), rgba(35,68,101,0.9)), url('../resources/img/gold.jpg');
+    background: linear-gradient(rgba(35,68,101,0.5), rgba(35,68,101,0.9)), url('../resources/img/gold.jpg');
+    background-position: center;
+    background-size: cover;
     padding-bottom: 20px;
 }
 
@@ -116,16 +125,30 @@ img#logo {
     margin-right: 20px;
     height: 100px;
     width: 100px;
+    -webkit-animation-name: spin;
     animation-name: spin;
+    -webkit-animation-duration: 4s;
     animation-duration: 4s;
 }
 
 /*logo animation*/
-@keyframes spin {
+@-webkit-keyframes spin {
     from {
+        -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
     to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
 }
@@ -157,16 +180,32 @@ img#logo {
 
 #rich:hover #rich-man{
     display: inherit;
+    -webkit-animation-name: rich-man;
     animation-name: rich-man;
+    -webkit-animation-duration: 4s;
     animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes rich-man {
+    from {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+    to {
+        -webkit-transform: translateX(500px);
+        transform: translateX(500px)
+    }
 }
 
 @keyframes rich-man {
     from {
+        -webkit-transform: translateX(0);
         transform: translateX(0)
     }
     to {
+        -webkit-transform: translateX(500px);
         transform: translateX(500px)
     }
 }
@@ -174,6 +213,17 @@ img#logo {
 @media (max-width: 575px){
     #rich:hover #rich-man{
         display: none;
+    }
+}
+
+/*carousel*/
+
+@media (max-width: 575px){
+    .carousel-caption h3{
+        font-size: 15px;
+    }
+    .carousel-caption p{
+        font-size: 13px;
     }
 }
 
@@ -231,6 +281,7 @@ aside .panel, aside .title-container {
     color: #fff;
     visibility: hidden;
     opacity: 0;
+    -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
 
 }
@@ -267,6 +318,7 @@ aside .panel, aside .title-container {
 
 aside .panel-default:hover, .panel-body:hover {
     background: #ddd;
+    -webkit-transition: background-color 1000ms linear;
     transition: background-color 1000ms linear;
 }
 
@@ -294,8 +346,14 @@ aside .panel-default:hover, .panel-body:hover {
 /*footer*/
 
 footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 60px;
     background: #234465;
@@ -309,7 +367,10 @@ footer p {
 @media (max-width: 575px) {
     footer {
         min-height: 60px;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
         justify-content: flex-start;
     }
 
