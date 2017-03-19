@@ -33,13 +33,28 @@ p {
     background: #162B40;
 }
 
+
 .navbar-inverse .navbar-nav > li > a {
     color: #d7d5d5;
 }
 
 @media (max-width: 991px) {
-    .navbar form {
+    .navbar-right {
         float: left !important;
+    }
+
+}
+
+@media (max-width: 575px){
+    .navbar-right {
+        float: none !important;
+        display: block;
+        margin: 0 auto;
+    }
+    .navbar-inverse .navbar-toggle {
+        float: none;
+        display: block;
+        margin: 8px auto;
     }
 }
 
@@ -48,6 +63,14 @@ p {
 ul.font-awesome {
     margin-right: 50px;
 }
+
+@media (max-width: 575px){
+    ul.font-awesome {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 
 ul.font-awesome li {
     font-size: 25px;
